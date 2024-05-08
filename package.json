@@ -1,0 +1,23 @@
+{
+  "name": "blackhole",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "install": "npm install --prefix frontEnd && npm install --prefix backEnd",
+    "build": "npm run dev --prefix frontEnd",
+    "dev": "npm run dev --prefix frontEnd && npm start --prefix backEnd"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iammazyar/blackhole.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/iammazyar/blackhole/issues"
+  },
+  "homepage": "https://github.com/iammazyar/blackhole#readme"
+}

@@ -1,0 +1,6 @@
+*/node_modules
+
+.git
+
+backEnd/src/public/gameView/bundle.gameView.js
+

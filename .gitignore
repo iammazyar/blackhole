@@ -1,0 +1,5 @@
+node_modules
+backEnd/cert.pem
+backEnd/key.pem
+backEnd/.env
+
