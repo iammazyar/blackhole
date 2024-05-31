@@ -28,7 +28,7 @@ module.exports = function(io){
         });
 
         socket.on('velocity', data => {
-            if(player.velocityCalculator){
+            if(player.velocityCalculator.mouseVelocity){
                 data.x /= Math.hypot(data.x, data.y)
                 data.y /= Math.hypot(data.x, data.y)
                 player.velocityCalculator.updateMouseVelocity(data);
@@ -49,8 +49,9 @@ module.exports = function(io){
         })
     });
     setInterval(async () => {
-        await ROOMS['test_room'].conditionCheck();
-        io.emit('updatePlayers', ROOMS['test_room'].clientPlayers);
-        
+        if(ROOMS['test_room'].serverPlayers.length){
+            await ROOMS['test_room'].conditionCheck();
+            io.emit('updatePlayers', ROOMS['test_room'].clientPlayers);
+        }  
     }, 15);
 }

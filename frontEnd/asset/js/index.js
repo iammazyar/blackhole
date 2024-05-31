@@ -225,7 +225,7 @@ socket.on('updatePlayers', serverPlayers => {
         return b.power - a.power;
     });
     sortedPlayersbyPower.forEach((player, index) => {
-        document.getElementById('playerLabels').innerHTML += `<div>${index+1}-${player.name}: ${player.power}</div>`
+        document.getElementById('playerLabels').innerHTML += `<div>${index+1}-${player.name}</div>`
     });
     for (const id in players) {
         if (!serverPlayers[id]) {
@@ -240,9 +240,24 @@ socket.on('updatePlayers', serverPlayers => {
                 document.body.removeChild(app.view);  
                 document.getElementById("usernameForm").style.display = 'block';
                 document.getElementById("Leaderboard").style.display = 'none';
+                window.removeEventListener("resize", () => {
+                    app.renderer.resize(width, height);
+                });
+                
+                window.removeEventListener("mousemove", (event) => {
+                
+                    let angle = Math.atan2(
+                        event.y - height/2,
+                        event.x - width/2
+                    );
+                    
+                    velocity.x = Math.cos(angle);
+                    velocity.y = Math.sin(angle);
+                    socket.emit('velocity',velocity);
+                })
             }
         }
-      }
+    }
 });
 
 document.getElementById("usernameForm").addEventListener('submit', (event) => {
