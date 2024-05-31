@@ -7,8 +7,8 @@ const socketHandler = require('./src/socketHandler');
 const PORT = 3000;
 
 const server = https.createServer({
-    key: fs.readFileSync('key.pem'),
-    cert: fs.readFileSync('cert.pem')
+    key: fs.readFileSync('dev_key.pem'),
+    cert: fs.readFileSync('dev_cert.pem')
 }, app);
 
 function startServer(){
