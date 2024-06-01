@@ -43,5 +43,5 @@ This project is licensed under the MIT License
 To run the project locally, pull the repository and run the following commands:
 
 ```bash
-npm install
+npm run install
 npm run dev
