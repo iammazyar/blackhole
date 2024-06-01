@@ -111,7 +111,7 @@ function gameLoop(delta) {
             players[user].updateScale(scaleCoherent.value);
         }
     }
-    else if(2.6*players[socket.id].radius/height > 2*topVerticalGridAxis ){
+    else if(2.6*players[socket.id].radius/height > 0.5*topVerticalGridAxis ){
 
         const po = Math.floor(2.6*players[socket.id].radius/height);
         gsap.to(scaleCoherent, {

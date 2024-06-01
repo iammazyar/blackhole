@@ -45,7 +45,8 @@ class War {
 
     async conditionCheck(){
         this.blackHole.update(this.maximumRadius, this.maximumDensity);
-        
+        this.maximumDensity = 0
+        this.maximumRadius = 0
         for(let i = this.serverPlayers.length - 1; i >= 0; i--){
             const player1 = this.serverPlayers[i];
             this.maximumRadius = Math.max(player1.radiusCalculator.radius, this.maximumRadius);
@@ -77,7 +78,7 @@ class War {
                     player1.velocityCalculator.updateForceVelocity(force1);
                     player2.velocityCalculator.updateForceVelocity(force2);
                     
-                if(dist < maxR1R2/3){
+                if(dist < maxR1R2){
                     if( player2.radiusCalculator.radius / player1.radiusCalculator.radius > 1.05 ){
 
                         player2.radiusCalculator.radius += player1.radiusCalculator.radius;
