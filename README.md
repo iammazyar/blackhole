@@ -41,6 +41,7 @@ This project is licensed under the MIT License
 ## Installation and Running Locally
 
 To run the project locally, pull the repository and run the following commands:
+
 **after runnig the server , open the localhost on port 3000 (https://localhost:3000/)
 
 ```bash
