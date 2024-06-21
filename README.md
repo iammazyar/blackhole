@@ -22,6 +22,16 @@ Before I forget, here is my donation link. If you like the idea, you can donate 
 ## Demo
 [Screencast from 24-06-01 11:38:27.webm](https://github.com/iammazyar/blackhole/assets/102358714/d9cb74ba-2bf0-4acf-bed5-e298a71673fa)
 
+![Screenshot from 2024-06-21 21-08-22](https://github.com/iammazyar/blackhole/assets/102358714/cef08a77-918a-4a27-a5b8-0af74fce8ec4)
+
+![Screenshot from 2024-06-21 21-09-18](https://github.com/iammazyar/blackhole/assets/102358714/833461cc-a3a1-4da2-a4ff-2ef630721e93)
+
+![Screenshot from 2024-06-21 21-09-37](https://github.com/iammazyar/blackhole/assets/102358714/1dae1583-6f93-4456-9604-89d5a6387947)
+
+![Screenshot from 2024-06-21 21-09-47](https://github.com/iammazyar/blackhole/assets/102358714/ac298944-5a2e-4cbd-b799-74bf15b5b4f5)
+
+
+
 Each player's character is represented by a galaxy that moves toward the direction of the mouse. Each galaxy has a power property that allows it to absorb other galaxies, depending on the power ratio and the distance between the galaxies. Power is determined by the galaxy's radius and the total playtime (more playtime increases power).
 
 The number of arms a galaxy has also increases with playtime (e.g., 2 arms after 2 minutes, 3 arms after 5 minutes, etc.).
