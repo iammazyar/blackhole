@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>black hole</title>
+    <link rel='stylesheet' type='text/css' media='screen' href='index.gameView.css'>
+</head>
+<body>
+    <div id="Leaderboard" style="z-index: 2; ;position: absolute; color: white; padding: 8px; font-family: sans-serif; user-select: none; background: rgba(0,0,0,0.7);">
+        <div style="margin-bottom: 8px;">Leaderboard</div>
+        <div id="playerLabels">
+            
+        </div>
+    </div>
+    <canvas style="z-index: 1;" id="gameCanvas"></canvas>
+    <!-- username input -->
+    
+    <div style="background: rgba(0,0,0,1); display: flex; align-items: center; justify-content: center; position: absolute;
+         top: 0; right: 0; bottom: 0; left: 0;" >
+        <form id="usernameForm">
+            <div>
+                <input id="usernameInput" type="text" placeholder="Username" style=" padding: 12px; 
+                    border-radius: 20px; border: none; background: #475569; color: #cbd5e1;"/>
+            </div>
+            <div style="text-align: center; margin-top: 8px">
+                <button style="padding: 8px 20px; border-radius: 100px; border: none;
+                    background-image: linear-gradient(
+                    to right,
+                    rgb(6, 182, 212),
+                    rgb(59, 130, 246)
+                    );
+                    color: white;
+                    cursor: pointer;">Play!
+                </button>
+            </div>
+        </form>
+    </div>
+    <!-- username input end -->
+    <script src="bundle.gameView.js"></script>
+</body>
+</html>
