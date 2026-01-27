@@ -4,7 +4,7 @@ const https = require('https');
 const app = require('./src/app');
 const socketHandler = require('./src/socketHandler');
 
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 
 const server = https.createServer({
     key: fs.readFileSync('dev_key.pem'),

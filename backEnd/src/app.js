@@ -12,9 +12,10 @@ app.use(helmet({
     //crossOriginResourcePolicy: false
 }));
 
+const PORT = process.env.PORT || 3000;
 
 app.use(cors({
-    origin: 'https://localhost:3000'
+    origin: `https://localhost:${PORT}`
 }));
 app.use(express.json());
 
