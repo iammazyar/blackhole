@@ -15,7 +15,7 @@ app.use(helmet({
 const PORT = process.env.PORT || 3000;
 
 app.use(cors({
-    origin: `https://localhost:${PORT}`
+    origin: 'https://iammazyar.github.io'
 }));
 app.use(express.json());
 
