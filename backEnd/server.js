@@ -16,9 +16,10 @@ function startServer(){
     const io = socket(server, {
         pingInterval: 2000,
         pingTimeout: 5000,
-        cors:{
-            origin: '*',
-            methods: ['GET', 'POST']
+        cors: {
+            origin: ["https://iammazyar.github.io","http://localhost:3000"],
+            methods: ["GET", "POST"],
+            credentials: true
         },
         transports: ["polling", "websocket"],
     });
