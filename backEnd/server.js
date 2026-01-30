@@ -1,15 +1,12 @@
 const socket  = require('socket.io');
 const fs = require('fs');
-const https = require('https');
+const http = require('http');
 const app = require('./src/app');
 const socketHandler = require('./src/socketHandler');
 
 const PORT = process.env.PORT || 3000;
 
-const server = https.createServer({
-    key: fs.readFileSync('dev_key.pem'),
-    cert: fs.readFileSync('dev_cert.pem')
-}, app);
+const server = http.createServer(app);
 
 function startServer(){
 
