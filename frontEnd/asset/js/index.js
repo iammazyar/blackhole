@@ -9,9 +9,7 @@ import { gsap } from "gsap";
 document.getElementById("Leaderboard").style.display = 'none';
 const canvas = document.getElementById("gameCanvas");
 //'https://localhost:3000'
-const socket = io('https://blackhole-5e56.onrender.com', {
-  transports: ["websocket"],
-});
+const socket = io('https://blackhole-5e56.onrender.com');
 
 
 let gameScene, template, app, blackhole,

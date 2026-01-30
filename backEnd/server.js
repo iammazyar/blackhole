@@ -19,7 +19,8 @@ function startServer(){
         cors:{
             origin: '*',
             methods: ['GET', 'POST']
-        }
+        },
+        transports: ["polling", "websocket"],
     });
 
     server.listen(PORT, () => {
